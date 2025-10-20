@@ -1,5 +1,7 @@
 # Geojson
 
+<img width="1281" height="625" alt="image" src="https://github.com/user-attachments/assets/3ff78e72-4e60-4d9e-9241-5250608361e0" />
+
 # Data GeoJSON: Jalan di Area Sukaluyu, Bandung
 Repositori ini berisi file GeoJSON yang memetakan beberapa ruas jalan di area Sukaluyu, Bandung. Data ini dibuat untuk memenuhi tugas mata kuliah Sistem Informasi Geografis (SIG).
 
@@ -41,6 +43,6 @@ Berikut adalah contoh struktur untuk satu ruas jalan ("Jalan Kawung Ece") yang m
         "type": "LineString"
       }
     }
-```
-    }
+  ]
+}
 ```
