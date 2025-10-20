@@ -17,24 +17,25 @@ type: Tipe geometri yang digunakan adalah LineString, cocok untuk merepresentasi
 coordinates: Sebuah array yang berisi dua atau lebih titik koordinat [longitude, latitude] yang membentuk garis jalan tersebut.
 
 ```
- {
-      "name": "Jalan Kawung Picis",
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "coordinates": [
-          [
-            107.63191570978813,
-            -6.895971723601576
-          ],
-          [
-            107.63247495748806,
-            -6.897247505158731
-          ]
-        ],
-        "type": "LineString"
-      }
-    }
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Jalan Kawung Ece"
+  },
+  "geometry": {
+    "coordinates": [
+      [
+        107.6312301076805,
+        -6.89630217112277
+      ],
+      [
+        107.63179767120198,
+        -6.897594285992071
+      ]
+    ],
+    "type": "LineString"
+  }
+}
 ```
 
 Data ini siap digunakan!
