@@ -23,9 +23,10 @@ Berikut adalah contoh struktur untuk satu ruas jalan ("Jalan Kawung Ece") yang m
   "type": "FeatureCollection",
   "features": [
     {
-      "name": "Jalan Kawung Ece",
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "name": "Jalan Kawung Ece"
+      },
       "geometry": {
         "coordinates": [
           [
@@ -39,5 +40,7 @@ Berikut adalah contoh struktur untuk satu ruas jalan ("Jalan Kawung Ece") yang m
         ],
         "type": "LineString"
       }
+    }
+```
     }
 ```
