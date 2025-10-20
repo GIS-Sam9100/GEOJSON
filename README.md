@@ -1,43 +1,43 @@
-# GEOJSON
+# Geojson
 
-## Data GeoJSON: Di Area Sukaluyu
-Repositori ini berisi file GeoJSON yang memetakan beberapa ruas jalan di area Sukaluyu, Bandung. Data ini dibuat sebagai bagian dari tugas mata kuliah Sistem Informasi Geografis.
+# Data GeoJSON: Jalan di Area Sukaluyu, Bandung
+Repositori ini berisi file GeoJSON yang memetakan beberapa ruas jalan di area Sukaluyu, Bandung. Data ini dibuat untuk memenuhi tugas mata kuliah Sistem Informasi Geografis (SIG).
 
-## Deskripsi Data
-File GeoJSON ini merupakan sebuah FeatureCollection yang berisi kumpulan fitur geografis. Setiap fitur merepresentasikan satu ruas jalan dalam bentuk LineString.
+# Deskripsi Data
+File GeoJSON ini merupakan sebuah FeatureCollection yang berisi kumpulan fitur geografis. Setiap fitur di dalamnya merepresentasikan satu ruas jalan dalam bentuk LineString. Data ini cocok digunakan untuk visualisasi pada platform pemetaan atau untuk analisis spasial lebih lanjut.
 
-## Struktur Data
-Struktur data untuk setiap jalan (fitur) dalam file ini cukup sederhana:
+# Struktur Data
+Setiap fitur jalan dalam koleksi ini mengikuti standar GeoJSON yang terdiri dari tiga bagian utama: type, properties, dan geometry.
 
-name: Properti utama yang berisi nama jalan (contoh: "Jalan Kawung Ece", "Jalan Batik Kumeli").
-type: Menandakan bahwa objek ini adalah sebuah "Feature" GeoJSON.
-properties: Objek ini saat ini kosong, karena informasi utama (nama jalan) ditempatkan di level atas.
-geometry: Objek yang menyimpan data spasial:
-type: Tipe geometri yang digunakan adalah LineString, cocok untuk merepresentasikan jalan atau garis.
-coordinates: Sebuah array yang berisi dua atau lebih titik koordinat [longitude, latitude] yang membentuk garis jalan tersebut.
+type: Selalu bernilai "Feature" untuk menandakan bahwa objek ini adalah sebuah fitur geografis.
+properties: Sebuah objek yang berisi atribut atau metadata deskriptif dari fitur tersebut.
+name: Atribut utama yang menyimpan nama jalan, contohnya "Jalan Kawung Ece".
+geometry: Sebuah objek yang menyimpan informasi spasial atau bentuk geografis dari fitur tersebut.
+type: Tipe geometri yang digunakan adalah LineString, yang ideal untuk merepresentasikan jalan atau sungai.
+coordinates: Sebuah array yang berisi dua atau lebih titik koordinat [longitude, latitude] yang membentuk garis jalan.
 
+Contoh Data Satu Fitur Jalan
+Berikut adalah contoh struktur untuk satu ruas jalan ("Jalan Kawung Ece") yang menunjukkan bagaimana data di atas diaplikasikan:
 ```
 {
-  "type": "Feature",
-  "properties": {
-    "name": "Jalan Kawung Ece"
-  },
-  "geometry": {
-    "coordinates": [
-      [
-        107.6312301076805,
-        -6.89630217112277
-      ],
-      [
-        107.63179767120198,
-        -6.897594285992071
-      ]
-    ],
-    "type": "LineString"
-  }
-}
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "name": "Jalan Kawung Ece",
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            107.6312301076805,
+            -6.89630217112277
+          ],
+          [
+            107.63179767120198,
+            -6.897594285992071
+          ]
+        ],
+        "type": "LineString"
+      }
+    }
 ```
-
-Data ini siap digunakan!
-
-
