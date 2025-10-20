@@ -16,6 +16,27 @@ geometry: Objek yang menyimpan data spasial:
 type: Tipe geometri yang digunakan adalah LineString, cocok untuk merepresentasikan jalan atau garis.
 coordinates: Sebuah array yang berisi dua atau lebih titik koordinat [longitude, latitude] yang membentuk garis jalan tersebut.
 
-Data ini siap digunakan untuk visualisasi pada platform pemetaan atau untuk diimpor ke dalam basis data spasial.
+```
+ {
+      "name": "Jalan Kawung Picis",
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "coordinates": [
+          [
+            107.63191570978813,
+            -6.895971723601576
+          ],
+          [
+            107.63247495748806,
+            -6.897247505158731
+          ]
+        ],
+        "type": "LineString"
+      }
+    }
+```
+
+Data ini siap digunakan!
 
 
