@@ -1,7 +1,7 @@
 # GEOJSON
 
-## Data GeoJSON: Jaringan Jalan di Area Sukaluyu
-Repositori ini berisi file GeoJSON yang memetakan beberapa ruas jalan di area Sukaluyu, Bandung. Data ini dibuat sebagai bagian dari tugas mata kuliah Sistem Informasi Geografis (SIG).
+## Data GeoJSON: Di Area Sukaluyu
+Repositori ini berisi file GeoJSON yang memetakan beberapa ruas jalan di area Sukaluyu, Bandung. Data ini dibuat sebagai bagian dari tugas mata kuliah Sistem Informasi Geografis.
 
 ## Deskripsi Data
 File GeoJSON ini merupakan sebuah FeatureCollection yang berisi kumpulan fitur geografis. Setiap fitur merepresentasikan satu ruas jalan dalam bentuk LineString.
